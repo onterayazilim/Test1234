@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Olemex Agro & Food Export</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Olemex specializes in premium pumpkin and sunflower seeds sourced from Central Anatolia and exported worldwide." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --green: #1f7a4d;
+      --green-light: #e8f5ec;
+      --text-dark: #1a1a1a;
+      --text-light: #555;
+      --bg: #ffffff;
+      --radius: 14px;
+      --shadow: 0 10px 28px rgba(0,0,0,0.08);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      color: var(--text-dark);
+    }
+
+    /* HEADER */
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 14px 0;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-left img {
+      height: 60px;
+      width: auto;
+    }
+
+    .brand {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--green);
+    }
+
+    .nav-links a {
+      margin-left: 26px;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 80px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      color: var(--text-dark);
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      margin-bottom: 26px;
+      max-width: 90%;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 26px;
+      background: var(--green);
+      color: #fff;
+      text-decoration: none;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 600;
+      box-shadow: var(--shadow);
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: var(--radius);
+      object-fit: cover;
+      box-shadow: var(--shadow);
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 14px;
+      color: var(--text-dark);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 18px;
+      border: 1px solid #e5e5e5;
+      box-shadow: var(--shadow);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      margin-bottom: 14px;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      padding: 26px 0;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+      .hero h1 {
+        font-size: 2.3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <div class="nav">
+      <div class="nav-left">
+        <img src="logo.png" alt="Olemex Logo">
+        <div class="brand">Olemex</div>
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#export">Export</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Premium Pumpkin & Sunflower Seeds</h1>
+    <p>
+      Olemex delivers high‑quality pumpkin and sunflower seeds sourced from the fertile Central Anatolia region — trusted by importers, packers, and roasters worldwide.
+    </p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </div>
+  <div>
+    <img src="https://images.pexels.com/photos/4199099/pexels-photo-4199099.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Pumpkin seeds">
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2>About Olemex</h2>
+    <div class="grid-2">
+      <div>
+        <p>
+          Olemex is a Turkish agricultural trading company focused on the wholesale of pumpkin and sunflower seeds. With over 45 years of experience, we combine deep local knowledge with global export standards.
+        </p>
+        <p>
+          As the third generation, our mission is to bring the finest Anatolian harvests to international markets with consistency, transparency, and long‑term partnerships.
+        </p>
+      </div>
+      <div>
+        <img src="https://images.pexels.com/photos/4199098/pexels-photo-4199098.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Sunflower field">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="container">
+    <h2>Our Products</h2>
+    <div class="grid-3">
+
+      <div class="card">
+        <img src="https://images.pexels.com/photos/4199099/pexels-photo-4199099.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="">
+        <h3>Pumpkin Seeds</h3>
+        <p>Available in shell and kernel form, sourced from selected Central Anatolian farms.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.pexels.com/photos/3735168/pexels-photo-3735168.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="">
+        <h3>Sunflower Seeds</h3>
+        <p>Striped and black sunflower seeds ideal for roasting and snack production.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.pexels.com/photos/3735170/pexels-photo-3735170.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="">
+        <h3>Quality Control</h3>
+        <p>Cleaning, sorting, and export preparation tailored to your specifications.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="export">
+  <div class="container">
+    <h2>Global Export</h2>
+    <p>
+      We export to Europe, the Middle East, North Africa, Asia, and the Americas. Our logistics network ensures smooth container and truck shipments from Türkiye to your warehouse.
+    </p>
+    <img src="https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=1200" style="width:100%; border-radius:14px; margin-top:20px;">
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>
+      For inquiries, specifications, or partnership opportunities, reach out to us.
+    </p>
+    <p><strong>Email:</strong> info@olemex.com (example)</p>
+    <p><strong>Phone:</strong> +90 000 000 00 00 (example)</p>
+  </div>
+</section>
+
+<footer>
+  © <script>document.write(new Date().getFullYear())</script> Olemex Agro & Food Export — All Rights Reserved
+</footer>
+
+</body>
+</html>
